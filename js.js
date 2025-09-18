@@ -53,6 +53,10 @@ var otherUrls = [
 	'https://taosewu.github.io/index',
 ];
 
+var foreverUrls = [
+    'https://taosewu.com'
+];
+
 var notices = [
     '* 我们推荐PC和Andriod手机用户使用Chrome(谷歌)浏览器访问，iPhone用户我们建议您使用手机自带Safria浏览器访问。',
     //'* 为了防止域名劫持而无法访问，请设置手机和PC的DNS，我们推荐使用8.8.8.8和1.1.1.1。',
@@ -136,6 +140,10 @@ window.onload = function () {
     // email
     var mailFieldElem = createFieldElem({title: '发送邮件获得最新地址', items: emails, plainText: true});
     mainElem.appendChild(mailFieldElem);
+
+    // forever urls
+    var foreverFieldElem = createFieldElem({title: '永久地址', items: foreverUrls});
+    mainElem.appendChild(foreverFieldElem);
 
     // Description
     var noticeFieldElem = createFieldElem({title: '注意事项', items: notices, plainText: true, classStr: 'desc'});
